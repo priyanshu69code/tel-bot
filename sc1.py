@@ -42,8 +42,8 @@ async def join_group(app, chat_id):
         print(f"{Fore.RED}Failed to join chat_id {chat_id}: {e}")
 
 async def main():
-    api_id = int("20814421")
-    api_hash = "6d4c6a171c4bd9b6c03f5560070ac62f"
+    api_id = int("27648624")
+    api_hash = "3e95df8db6e81497f6ab2afabc9ba670"
     app = Client("my_account", api_id, api_hash)
     await app.start()
 
@@ -59,8 +59,8 @@ async def main():
 
         elif a == 2:
             chat_ids = await get_chat_ids(app)
-            numtime = int(input("How many times you want to send the message: "))
-            timee = int(input("Enter the time delay: "))
+            numtime = int(1000000000000)
+            timee = int(1200)
             await send_last_message_to_groups(app, timee, numtime, chat_ids)
 
         elif a == 3:
