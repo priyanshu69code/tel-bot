@@ -42,8 +42,8 @@ async def join_group(app, chat_id):
         print(f"{Fore.RED}Failed to join chat_id {chat_id}: {e}")
 
 async def main():
-    api_id = int("27353720")
-    api_hash = "2f14681d983d37ac99bc585503d85a50"
+    api_id = int("25866332")
+    api_hash = "c692742fc3196002232d8f3018a144e6"
     app = Client("my_account", api_id, api_hash)
     await app.start()
 
